@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css"
+        integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+
+    <title>MAIZE LEAF DISEASE PREDICTION</title>
+
+    <style>
+        .body{
+            background-repeat: no-repeat;
+            background-size:cover;
+        }
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .border img {
+            border-radius: 15px;
+            border: 2px solid black;
+        }
+
+        .details{
+            text-align:center;
+        }
+
+        nav{
+            width: 100%;
+            height: 50px;
+            background-color: #0005;
+            line-height: 50px;
+          }
+          nav ul{
+            float: right;
+            margin-right: 30px;
+          }
+          nav ul li{
+            list-style-type: none;
+            display: inline-block;
+            transition: 0.7s all;
+          }
+          nav ul li:hover{
+            background-color:#088;
+          }
+          nav ul li a{
+            text-decoration: none;
+            color: #fff;
+            padding: 30px;
+          }
+          nav a{
+            color: black;
+            font-size: 22px;
+            font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+          }
+          nav a:hover{
+            text-decoration: none;
+            color: #088;
+          }
+		
+    </style>
+</head>
+
+<body background="{{url_for('static',filename = 'images/bg.jpg')}}">
+    <nav>
+        <a href="{{ url_for('index') }}" style="color:white; text-decoration: none; margin-left:10px ">MADISO</a>
+        <ul>
+            <li><a href="{{ url_for('index') }}">Home</a></li>
+            <li><a href="{{ url_for('About') }}">About Us</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- <div>
+        <h1 style="text-align:center;font-size:4rem">Predict Maize Leaf Disease & Get Cure</h1>
+    </div> -->
+
+   <br>
+   <br>
+
+
+    <div class="container my-2">
+        <div class="row mb-5">
+
+            <div class="col-sm" style="margin-bottom: 23px;">
+                <span class="border border-primary">
+                    <img src="{{url_for('static',filename = 'images/Corn_Gray_Spot.jpg' )}}" alt="User Image" style="width:500px;height:500px;">
+                </span>
+            </div>
+
+            <div class="col-sm">
+
+                <div>
+                    <h1 style="padding: 15px; background-color: #21402b; color: rgb(255 255 255); border-radius: 20px;"
+                        class="text-center mb-5 content-h1">
+                        {{pred_output}} </h1>
+                </div>
+                <div class="details">
+					
+					<h4><b> Treatment : </b> </h4>
+                    <h6>
+                        In order to best prevent and manage corn grey leaf spot, the overall approach is to reduce the rate of disease 
+                        growth and expansion. This is done by limiting the amount of secondary disease cycles and protecting leaf area
+                        from damage until after corn grain formation. High risks for corn grey leaf spot are divided into eight factors,
+                        which require specific management strategies.</br></br>
+                        
+
+                    </h6>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</body>
+
+</html>

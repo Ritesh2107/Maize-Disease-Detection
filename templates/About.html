@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" 
+  integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" 
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/style-about.css') }}">
+
+</head>
+<body>
+
+  <div>
+    <nav>
+      <a href="{{ url_for('index') }}" style="color:white; text-decoration: none; margin-left:10px ">MADISO</a>
+        <ul>
+            <li><a href="{{ url_for('index') }}">HOME</a></li>
+            <li><a href="{{ url_for('About') }}">ABOUT US</a></li>
+        </ul>
+    </nav>
+  </div>
+
+  <div class="about-section">
+    <h1 >WHO WE ARE</h1>
+    <p><h2 >Get acquainted with our team and find solution for healthy crops.</h2></p>
+  </div>
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="{{url_for('static',filename = 'images/ritesh.jpg' )}}" alt="Ritesh" style="width:100%">
+      <div class="container">
+        <h2 style="color: black;">Ritesh Kulkarni</h2>
+        <p class="title">Coder</p>
+        <p style="color: black;">I thrive towards innovation and would like to use engineering as a medium of change in the society.</p>
+        <p><a href="ritesh.kulkarni033@nmims.edu.in" class="socials"><i class="fa-regular fa-envelope fa-2xl"></i></a></p>
+        <a href="https://www.linkedin.com/in/riteshk578/" class="socials" target="blank"><i class="fa-brands fa-linkedin fa-2xl"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="{{url_for('static',filename = 'images/khushi.jpg' )}}" alt="khushi" style="width:100%">
+      <div class="container">
+        <h2 style="color: black;">Khushi Jain</h2>
+        <p class="title">UI/UX Developer</p>
+        <p style="color: black;">An independent and self-motivated person, currently pursuing Engineering in Information Technology.</p>
+        <p><a href="mailto: khushi.jain022@nmims.edu,in" class="socials" ><i class="fa-regular fa-envelope fa-2xl"></i></a>
+        <a href="https://www.linkedin.com/in/khushijain26/" class="socials" target="blank"><i class="fa-brands fa-linkedin fa-2xl"></i></a></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="{{url_for('static',filename = 'images/sahil.jpg' )}}" alt="Sahil" style="width:100%">
+      <div class="container">
+        <h2 style="color: black;">Sahil Gupta</h2>
+        <p class="title">Web Developer</p>
+        <p style="color: black;">I am interested in exploring new technologies and learn and develop myself.</p>
+        <p><a href="mailto: sahil.gupta021@nmims.edu.in"  class="socials" ><i class="fa-regular fa-envelope fa-2xl"></i></a>
+        <a href="https://www.linkedin.com/in/sahil-gupta-b431241b7/" class="socials" target="blank"><i class="fa-brands fa-linkedin fa-2xl"></i></a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

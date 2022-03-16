@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/styles.css') }}">
+    <title>Disease Detection in Maize Crops</title>
+    
+</head>
+<body>
+    <div>
+    <nav>
+        <a href="{{ url_for('index') }}" style="color:white; text-decoration: none; margin-left:10px ">MADISO</a>
+        <ul>
+            <li><a href="{{ url_for('index') }}">HOME</a></li>
+            <li><a href="{{ url_for('About') }}">ABOUT US</a></li>
+        </ul>
+    </nav>
+
+      <br>
+      <br>
+      
+      
+    <section>
+        <h1 class="title" style="color:#000000; text-align:center">PREDICT MAIZE LEAF DISEASE & GET CURE</h1>
+
+        <br><br>
+        <h4 style="color:#018d01;text-align: center;">Please Upload your Image 
+            <br>to Detect the Disease in your crop</h4>
+  
+            <form action="/predict" method="post" enctype="multipart/form-data" onsubmit="showloading()">
+
+                <!-- <input type="file" name="image" class="upload">
+                <div>
+                    <input type="submit" value="Predict">
+                </div> -->
+
+                <div class="formcontainer">
+                    <div class="container">
+                      <input type="file" name="image" class="upload">
+                    </div>
+                    <br>
+                    <br>
+                    <button type="submit" value="Predict">Submit</button>
+            </form>
+    </section>
+    </div>
+</body>
+</html>
