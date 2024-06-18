@@ -12,7 +12,7 @@ This project surveys and compares various plant disease detection strategies usi
 India is a predominantly agricultural country where agriculture serves as the primary income source for the majority of the population. Introducing modern technologies to farming can make lives more comfortable and increase crop productivity.
 
 ## Methodology
-The project employs various image processing techniques and neural network approaches for plant disease detection. Specifically, it focuses on detecting maize leaf disease, which is crucial during the maize planting stage.
+The project employs various image-processing techniques and neural network approaches for plant disease detection. Specifically, it focuses on detecting maize leaf disease, which is crucial during the maize planting stage.
 
 ## Classification Techniques
 Several classification techniques are explored and compared, including:
@@ -52,6 +52,3 @@ This project aims to leverage image processing and neural networks to provide an
 ## Contact
 For more information, please contact [Ritesh Kulkarni](mailto:kulkarni578@gmail.com).
 
----
-
-*Note: Replace `username` with your GitHub username and `main.py` with the main script file name in the usage section.*
