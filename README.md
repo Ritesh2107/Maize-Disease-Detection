@@ -43,7 +43,7 @@ Several classification techniques are explored and compared, including:
     ```
 3. Run the project:
     ```bash
-    python main.py
+    python app.py
     ```
 
 ## Conclusion
